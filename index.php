@@ -13,7 +13,13 @@
 
   <body>
 
-    <div id='div1'></div>
+    <div id='div1'>
+      
+      <?php
+      echo "Ehooo";
+      ?>
+      
+    </div>
 
   </body>
 </html>
