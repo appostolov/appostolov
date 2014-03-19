@@ -10,11 +10,11 @@ body
   left:40%;
   width:200px;
   height:100px;
+  text-align:center;
 }
 p
 {
   color:rgb(255,0,0);
   position:relative;
-  float:center;
   font-size:20px;
 }
