@@ -4,8 +4,13 @@ body
 }
 #panel_1
 {
-  background-color:rgb(100,0,200);
+  
   position:absolute;
+  top:20px;
   left:400px;
+  width:400px;
+  height:300px;
+  background-color:rgb(100,0,200);
+  
   
 }
