@@ -4,13 +4,55 @@ body
 }
 #panel_1
 {
-  
   position:absolute;
   top:20px;
   left:400px;
   width:400px;
   height:300px;
   background-color:rgb(100,0,200);
-  
-  
+}
+#panel_2
+{
+  position:absolute;
+  top:20px;
+  left:900px;
+  width:400px;
+  height:300px;
+  background-color:rgb(100,0,200);
+}
+#panel_3
+{
+  position:absolute;
+  top:20px;
+  left:1400px;
+  width:400px;
+  height:300px;
+  background-color:rgb(100,0,200);
+}
+#panel_4
+{
+  position:absolute;
+  top:420px;
+  left:20px;
+  width:400px;
+  height:500px;
+  background-color:rgb(100,0,200);
+}
+#panel_5
+{
+  position:absolute;
+  top:400px;
+  left:420px;
+  width:400px;
+  height:300px;
+  background-color:rgb(100,0,200);
+}
+#panel_6
+{
+  position:absolute;
+  top:430px;
+  left:900px;
+  width:400px;
+  height:300px;
+  background-color:rgb(100,0,200);
 }
