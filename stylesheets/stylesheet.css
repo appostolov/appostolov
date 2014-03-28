@@ -11,8 +11,8 @@ img
   position:absolute;
   top:20px;
   left:400px;
-  width:600px;
-  height:400px;
+  width:500px;
+  height:300px;
   background-color:rgb(255,0,0);
 }
 #panel_2
@@ -20,8 +20,8 @@ img
   position:absolute;
   top:20px;
   left:1100px;
-  width:600px;
-  height:400px;
+  width:500px;
+  height:300px;
   background-color:rgb(0,0,255);
 }
 #panel_3
@@ -48,8 +48,8 @@ img
   position:absolute;
   top:400px;
   left:400px;
-  width:600px;
-  height:400px;
+  width:500px;
+  height:300px;
   background-color:rgb(255,255,0);
 }
 #panel_6
@@ -58,6 +58,6 @@ img
   top:430px;
   left:1100px;
   width:500px;
-  height:350px;
+  height:300px;
   background-color:rgb(0,255,0);
 }
