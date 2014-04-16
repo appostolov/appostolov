@@ -1,25 +1,79 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Appostolov : TEST" />
+<style>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+.color:active{
+	box-shadow:2px 2px 5px black;
+}
 
-    <title>Appostolov</title>
-  </head>
+</style>
 
-  <body>
-  
-  <img src="images/CV_pic.png" width="350px" height="300px" ></img>
-  <div id="panel_1"></div>
-  <div id="panel_2"></div>
-  <div id="panel_3"></div>
-  <div id="panel_4"></div>
-  <div id="panel_5"></div>
-  <div id="panel_6"></div>
+</head>
+
+<body>
+
+<div id="plane" style="position:absolute; width:500px; height:500px; border:1px solid black;"></div>
     
-  </body>
+<div id="colors" style="position:absolute; left:600px; width:100px; height:470px; border:1px solid black;">
+    
+    	<div class="color" id="black" style="position:relative; width:80px; height:80px; background-color:black; border:1px solid black; margin:10px;"></div>
+        <div class="color" id="red" style="position:relative; width:80px; height:80px; background-color:red; border:1px solid black; margin:10px;"></div>
+        <div class="color" id="blue" style="position:relative; width:80px; height:80px; background-color:blue; border:1px solid black; margin:10px;"></div>
+        <div class="color" id="green" style="position:relative; width:80px; height:80px; background-color:green; border:1px solid black; margin:10px;"></div>
+        <div class="color" id="yellow" style="position:relative; width:80px; height:80px; background-color:yellow; border:1px solid black; margin:10px;"></div>
+    
+    </div>
+    
+    <div id="c_color" style="position:absolute; left:750px; width:100px; height:100px; border:1px solid black;"></div>
+
+<script>
+
+	var b;
+	var r;
+
+	var fu1 = function(){
+		document.getElementById("c_color").style.backgroundColor = this.style.backgroundColor;
+		b = this.style.backgroundColor; 
+	}
+	
+	var g = document.getElementsByClassName("color");
+	for(var i = 0; i<g.length; i++){
+		g[i].onclick = fu1;
+	}
+	
+	var fu2 = function(){
+			r = 1; 
+	}
+	
+	var fu3 = function(){
+			r = 0; 
+	}
+	
+	var fu = function(){
+		if( r == 1 ){
+			this.style.backgroundColor = b;
+		}
+	}
+
+	for(var a = 0; a < 10000; a ++){
+	
+	var p = document.createElement("div");
+	p.style.position = "relative";
+	p.style.width = "5px";
+	p.style.height = "5px";
+	p.style.cssFloat = "left";
+	p.onmouseup = fu3;
+	p.onmousedown = fu2;
+	p.onmouseover = fu;
+	document.getElementById("plane").appendChild(p);
+	
+	}
+	
+</script>
+
+</body>
 </html>
