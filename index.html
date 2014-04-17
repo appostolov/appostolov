@@ -4,21 +4,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Untitled Document</title>
 
-<style>
-
-.color:active{
-	box-shadow:2px 2px 5px black;
-}
-
-</style>
+<link rel="stylesheet" type="text/css" href="main.css">
 
 </head>
 
 <body>
 
-<div id="plane" style="position:absolute; width:500px; height:500px; box-shadow:5px 5px 10px black;"></div>
+<div id="plane"></div>
     
-<div id="colors" style="position:absolute; left:600px; width:100px; height:470px; border:1px solid black;">
+<div id="colors">
     
     	<div class="color" id="black" style="position:relative; width:80px; height:80px; background-color:black; border:1px solid black; margin:10px;"></div>
         <div class="color" id="red" style="position:relative; width:80px; height:80px; background-color:red; border:1px solid black; margin:10px;"></div>
@@ -28,53 +22,9 @@
     
     </div>
     
-    <div id="c_color" style="position:absolute; border-radius:100px; left:750px; width:100px; height:100px; border:1px solid black;">
-    </div>
+    <div id="c_color"></div>
 
-<script>
-
-	var b;
-	var r;
-
-	var fu1 = function(){
-		document.getElementById("c_color").style.backgroundColor = this.style.backgroundColor;
-		b = this.style.backgroundColor; 
-	}
-	
-	var g = document.getElementsByClassName("color");
-	for(var i = 0; i<g.length; i++){
-		g[i].onclick = fu1;
-	}
-	
-	var fu2 = function(){
-			r = 1; 
-	}
-	
-	var fu3 = function(){
-			r = 0; 
-	}
-	
-	var fu = function(){
-		if( r == 1 ){
-			this.style.backgroundColor = b;
-		}
-	}
-
-	for(var a = 0; a < 10000; a ++){
-	
-	var p = document.createElement("div");
-	p.style.position = "relative";
-	p.style.width = "5px";
-	p.style.height = "5px";
-	p.style.cssFloat = "left";
-	p.onmouseup = fu3;
-	p.onmousedown = fu2;
-	p.onmouseover = fu;
-	document.getElementById("plane").appendChild(p);
-	
-	}
-	
-</script>
+<script src="main.js"></script>
 
 </body>
 </html>
