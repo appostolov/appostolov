@@ -32,3 +32,10 @@ canvas{
 	top:600px;
 	border:1px solid black;
 }
+
+.session{
+position:relative;
+width:100%;
+height:auto;
+background-color:green;
+}
