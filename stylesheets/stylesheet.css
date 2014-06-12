@@ -22,10 +22,11 @@
 	text-shadow:10px 10px 11px white;
 }
 
-#menu p{
+#menu b{
 	position:absolute;
 	width:300px;
 	text-align:center;
+	color:#5522ff;
 }
 
 .path{
