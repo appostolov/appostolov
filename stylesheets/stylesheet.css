@@ -2,3 +2,8 @@
 	position:relative;
 	margin:50px;
 }
+
+.path img{
+	width:300%;
+	height:auto;
+}
