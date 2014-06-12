@@ -1,40 +1,4 @@
-@charset "utf-8";
-/* CSS Document */
-
-#plane{
-	position:absolute;
-	width:500px; height:500px;
-	border:1px solid black;
-}
-
-#colors{
-	position:absolute;
-	left:600px;
-	width:100px;
-	height:470px;
-	border:1px solid black;
-}
-
-.color:active{
-	box-shadow:2px 2px 5px black;
-}
-
-#c_color{
-	position:absolute;
-	left:750px;
-	width:100px;
-	height:100px;
-	border:1px solid black;
-}
-
-canvas{
-	position:absolute;
-	border:1px solid black;
-}
-
-.session{
-position:relative;
-width:1000px;
-height:700px;
-background-color:green;
+.path{
+	position:relative;
+	margin:50px;
 }
