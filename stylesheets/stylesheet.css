@@ -25,6 +25,7 @@
 #menu b{
 	position:absolute;
 	width:300px;
+	font-size:30px;
 	text-align:center;
 	color:#5522ff;
 }
