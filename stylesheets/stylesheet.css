@@ -26,14 +26,14 @@
 	position:absolute;
 	width:300px;
 	font-size:30px;
-	text-align:center;
-	color:#5522ff;
+	text-align:left;
+	color:gold;
 	font-family:"Courier New", Courier, monospace;
 }
 
 #menu span{
 	position:absolute;
-	right:50px;
+	right:400px;
 	bottom:50px;
 	font-size:30px;
 	text-align:center;
