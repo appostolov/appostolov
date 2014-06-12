@@ -14,6 +14,9 @@
 }
 
 #menu p{
+	position:absolute;
+	top:150px;
+	left:100px;
 	color:#552200;
 }
 
