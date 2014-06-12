@@ -1,10 +1,12 @@
 .path{
 	position:relative;
-	padding:50px;
+	width:300px;
+	height:auto;
+	margin:50px;
 }
 
 .path img{
-	width:300px;
+	width:100%;
 	height:auto;
 	box-shadow:10px 10px 10px black;
 }
