@@ -31,6 +31,16 @@
 	font-family:"Courier New", Courier, monospace;
 }
 
+#menu span{
+	position:absolute;
+	right:50px;
+	bottom:50px;
+	font-size:30px;
+	text-align:center;
+	color:#5522ff;
+	font-family:"Courier New", Courier, monospace;
+}
+
 .path{
 	position:relative;
 	width:300px;
