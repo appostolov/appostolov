@@ -1,40 +1,13 @@
-var b;
-	var r;
+var vel = 5;
+var poz = 1;
 
-	var fu1 = function(){
-		document.getElementById("c_color").style.backgroundColor = this.style.backgroundColor;
-		b = this.style.backgroundColor; 
-	}
-	
-	var g = document.getElementsByClassName("color");
-	for(var i = 0; i<g.length; i++){
-		g[i].onclick = fu1;
-	}
-	
-	var fu2 = function(){
-			r = 1; 
-	}
-	
-	var fu3 = function(){
-			r = 0; 
-	}
-	
-	var fu = function(){
-		if( r == 1 ){
-			this.style.backgroundColor = b;
-		}
-	}
+var w_w = window.innerWidth;
 
-	for(var a = 0; a < 10000; a ++){
-	
-	var p = document.createElement("div");
-	p.style.position = "relative";
-	p.style.width = "5px";
-	p.style.height = "5px";
-	p.style.cssFloat = "left";
-	p.onmouseup = fu3;
-	p.onmousedown = fu2;
-	p.onmouseover = fu;
-	document.getElementById("plane").appendChild(p);
-	
+setInterval(function(){
+	document.getElementById("title_t").style.left = poz+"px";
+	if(poz >= window.innerWidth - 300 || poz <= 0){
+		vel = -vel;
 	}
+	poz += vel;
+},17);
+
