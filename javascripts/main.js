@@ -8,8 +8,8 @@ var inter = setInterval(function(){
 	if(poz >= window.innerWidth - 330 || poz <= 0){
 		vel = -vel;
 		var x = Math.floor((Math.random() * 999) + 1);
-		var y = Math.random();
 		document.getElementById("abs_container").style.background = "#"+x.toString();
 	}
 	poz += vel;
 },17);
+
