@@ -1,57 +1,66 @@
-@charset "utf-8";
-/* CSS Document */
-
 *{
 	margin:0;
 	padding:0;
+	position:relative;
+	float:left;
+	display:block;
 }
 
-body{
+title{
+	display:none;
+}
+
+#title{
 	width:100%;
-	height:100%;
-	background:#ddd;
-	text-align:center;
-}
-
-#add_eq{
-	position:relative;
-	width:auto;
 	height:auto;
-	background-color:#78c;
-	padding:20px;
-	margin:50px;
-	margin-left:auto;
-	margin-right:auto;
-	font-weight:bold;
 }
 
-#site_title{
-	position:relative;
-	left:5px;
-	top:5px;
-	color:silver;
+#title_t{
+	width:300px;
+	height:300px;
+	border-radius:300px;
+	background-color:rgba(0,0,0,1);
+	color:rgba(255,255,255,1);
+	text-align:center;
+	margin:5px;
 	font-size:50px;
+	line-height:275px;
+	font-family:"Palatino Linotype";
 }
 
-#add_eq input{
-	width:50px;
+.path{
+	width:300px;
+	height:300px;
+	border:1px dotted gray;
+	margin:5px;
 }
 
-#can{
-	box-shadow:4px 4px 5px black;
+.path:hover{
+	border:1px solid red;
+	background-color:rgba(0,200,255,0.3);
 }
 
-.arrows{
-	font-size:20px;
+.path img{
+	position:absolute;
+	bottom:5px;
+	width:90%;
+	height:auto;
+	border-radius:15px;
+	border:2px solid silver;
+	margin:0 4%;
 }
 
-#x_arrow{
-	position:relative;
-	top:-417px;
-	left:430px;
+.path b{
+	width:100%;
+	font-size:35px;
+	color:003355;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
 }
 
-#y_arrow{
-	position:relative;
-	top:-20px;
+.path p{
+	font-size:12px;
+	color:black;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
 }
