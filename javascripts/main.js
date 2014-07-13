@@ -6,6 +6,8 @@ var w_w = window.innerWidth;
 
 var paths = document.getElementsByClassName("path");
 
+paths[1].style.background = "white";
+
 var inter = setInterval(function(){
 	document.getElementById("title_t").style.left = poz+"px";
 	document.getElementById("title_t").style.background = "rgba("+colors+","+colors+",0,1)";
