@@ -60,7 +60,8 @@ title{
 }
 
 .path p{
+	top:20px;
 	font-size:12px;
 	color:black;
-	text-align:center;
+	text-align:justify;
 }
