@@ -14,7 +14,7 @@ var inter = setInterval(function(){
 		document.getElementById("abs_container").style.background = "#"+x.toString();
 	}else{
 		if(colors>=0){
-			colors --;	
+			colors -= 5;	
 		}
 	}
 	poz += vel;
