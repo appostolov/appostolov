@@ -7,7 +7,7 @@ var w_w = window.innerWidth;
 var paths = document.getElementsByTagName("a");
 
 for(var a = 0; a < paths.length; a ++){
-	paths[a].style.background = "red";
+	paths[a].style.backgroundColor = "red";
 }
 
 
