@@ -5,6 +5,7 @@ var colors = 255;
 var w_w = window.innerWidth;
 
 var paths = document.getElementsByClassName("path");
+paths[0].style.background = "red";
 
 var inter = setInterval(function(){
 	document.getElementById("title_t").style.left = poz+"px";
