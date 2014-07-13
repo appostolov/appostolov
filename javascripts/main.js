@@ -4,6 +4,8 @@ var colors = 255;
 
 var w_w = window.innerWidth;
 
+var time = 300;
+
 var inter = setInterval(function(){
 	document.getElementById("title_t").style.left = poz+"px";
 	document.getElementById("title_t").style.background = "rgba("+colors+","+colors+",0,1)";
@@ -18,5 +20,6 @@ var inter = setInterval(function(){
 		}
 	}
 	poz += vel;
+	time ++;
 },17);
 
