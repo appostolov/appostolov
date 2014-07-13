@@ -37,8 +37,7 @@ title{
 }
 
 .path:hover{
-	border:1px solid red;
-	background-color:rgba(0,200,255,0.3);
+	background:rgba(255,255,255,1);
 }
 
 .path img{
