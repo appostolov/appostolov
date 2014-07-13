@@ -9,6 +9,9 @@ var inter = setInterval(function(){
 		vel = -vel;
 		var x = Math.floor((Math.random() * 999) + 1);
 		document.getElementById("abs_container").style.background = "#"+x.toString();
+		document.getElementById("abs_container").style.color = "gold";
+	}else{
+		document.getElementById("abs_container").style.color = "white";
 	}
 	poz += vel;
 },17);
