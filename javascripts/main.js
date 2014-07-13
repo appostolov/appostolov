@@ -4,9 +4,21 @@ var colors = 255;
 
 var w_w = window.innerWidth;
 
-var time = 300;
+var paths = document.getElementsByClassName("path");
+
+var path_num = 0;
+
+var time = 0;
+
+var time1 = 0;
 
 var inter = setInterval(function(){
+	if(time > 0 && path_num < paths.length){
+		for(var r = 0; r < paths.length){
+			paths[r].style.backgound = "gold";	
+		}
+		paths[path_num].style.backgound = "gold";
+	}
 	document.getElementById("title_t").style.left = poz+"px";
 	document.getElementById("title_t").style.background = "rgba("+colors+","+colors+",0,1)";
 	if(poz >= window.innerWidth - 330 || poz <= 0){
@@ -21,5 +33,6 @@ var inter = setInterval(function(){
 	}
 	poz += vel;
 	time ++;
+	time1 ++;
 },17);
 
