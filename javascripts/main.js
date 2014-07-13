@@ -4,7 +4,7 @@ var colors = 255;
 
 var w_w = window.innerWidth;
 
-var paths = document.getElementsByClassName("path");
+var paths = document.getElementsByTagName("a");
 
 for(var a = 0; a < paths.length; a ++){
 	paths[a].style.background = "red";
