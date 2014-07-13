@@ -11,7 +11,7 @@ var inter = setInterval(function(){
 		var x = Math.floor((Math.random() * 999) + 1);
 		document.getElementById("abs_container").style.background = "#"+x.toString();
 	}else{
-		document.getElementById("title_t").style.background = "white";
+		document.getElementById("title_t").style.background = "black";
 	}
 	poz += vel;
 },17);
