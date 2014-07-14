@@ -33,7 +33,6 @@ title{
 	height:300px;
 	border-radius:30px;
 	background:rgba(255,255,255,1);
-	color:white;
 	margin:5px;
 }
 
@@ -54,7 +53,7 @@ title{
 .path b{
 	width:100%;
 	font-size:35px;
-	color:rgba(200,200,200,1);
+	color:white;
 	text-align:center;
 	font-family:Arial, Helvetica, sans-serif;
 	text-shadow:2px 2px 3px #555;
